@@ -156,9 +156,9 @@ END:VCARD`;
             <Linkedin className="w-6 h-6 text-zinc-300" />
             <span className="text-xs font-medium text-zinc-300">LinkedIn</span>
           </a>
-          <a href="https://github.com/bloodsport121/Chainlink-CRE-Agentic-Compliance-Bridge" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center justify-center gap-2 p-4 rounded-2xl bg-[#141414] border border-white/5 hover:border-orange-500/30 transition-colors text-center">
+          <a href="https://agenticportfoliox.github.io/Agentic-Website" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center justify-center gap-2 p-4 rounded-2xl bg-[#141414] border border-white/5 hover:border-orange-500/30 transition-colors text-center">
             <Code2 className="w-6 h-6 text-zinc-300" />
-            <span className="text-xs font-medium text-zinc-300">Portfolio</span>
+            <span className="text-xs font-medium text-zinc-300">Website</span>
           </a>
         </motion.div>
 
@@ -224,8 +224,8 @@ END:VCARD`;
                   onClick={() => setContactMethod('text')}
                   aria-pressed={contactMethod === 'text'}
                   className={`flex items-center justify-center gap-2 py-2.5 rounded-xl text-sm font-medium transition-colors border ${contactMethod === 'text'
-                      ? 'bg-orange-500/10 border-orange-500/50 text-orange-500'
-                      : 'bg-[#0a0a0a] border-white/10 text-zinc-400 hover:border-white/30 hover:text-zinc-300'
+                    ? 'bg-orange-500/10 border-orange-500/50 text-orange-500'
+                    : 'bg-[#0a0a0a] border-white/10 text-zinc-400 hover:border-white/30 hover:text-zinc-300'
                     }`}
                 >
                   <MessageCircle className="w-4 h-4" /> Text
@@ -235,8 +235,8 @@ END:VCARD`;
                   onClick={() => setContactMethod('telegram')}
                   aria-pressed={contactMethod === 'telegram'}
                   className={`flex items-center justify-center gap-2 py-2.5 rounded-xl text-sm font-medium transition-colors border ${contactMethod === 'telegram'
-                      ? 'bg-orange-500/10 border-orange-500/50 text-orange-500'
-                      : 'bg-[#0a0a0a] border-white/10 text-zinc-400 hover:border-white/30 hover:text-zinc-300'
+                    ? 'bg-orange-500/10 border-orange-500/50 text-orange-500'
+                    : 'bg-[#0a0a0a] border-white/10 text-zinc-400 hover:border-white/30 hover:text-zinc-300'
                     }`}
                 >
                   <Send className="w-4 h-4" /> Telegram
@@ -246,8 +246,8 @@ END:VCARD`;
                   onClick={() => setContactMethod('email')}
                   aria-pressed={contactMethod === 'email'}
                   className={`flex items-center justify-center gap-2 py-2.5 rounded-xl text-sm font-medium transition-colors border ${contactMethod === 'email'
-                      ? 'bg-orange-500/10 border-orange-500/50 text-orange-500'
-                      : 'bg-[#0a0a0a] border-white/10 text-zinc-400 hover:border-white/30 hover:text-zinc-300'
+                    ? 'bg-orange-500/10 border-orange-500/50 text-orange-500'
+                    : 'bg-[#0a0a0a] border-white/10 text-zinc-400 hover:border-white/30 hover:text-zinc-300'
                     }`}
                 >
                   <Mail className="w-4 h-4" /> Email
