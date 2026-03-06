@@ -18,6 +18,7 @@ import Connect from './pages/Connect';
 import TermsOfService from './pages/TermsOfService';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import OrderNode from './pages/OrderNode';
+import AgenticReplies from './pages/AgenticReplies';
 
 export default function App() {
   return (
@@ -30,6 +31,7 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/workflows" element={<AgenticWorkflows />} />
             <Route path="/speed-to-lead" element={<SpeedToLead />} />
+            <Route path="/replies" element={<AgenticReplies />} />
             <Route path="/video" element={<VideoMarketing />} />
             <Route path="/video/custom-ads" element={<CustomVideoAds />} />
             <Route path="/video/real-estate" element={<CinematicRealEstate />} />

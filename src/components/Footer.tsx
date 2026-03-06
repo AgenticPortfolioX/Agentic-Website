@@ -23,6 +23,7 @@ export default function Footer() {
             <ul className="space-y-3 text-zinc-400 text-sm">
               <li><Link to="/workflows" className="hover:text-orange-500 transition-colors">Automated Workflows</Link></li>
               <li><Link to="/speed-to-lead" className="hover:text-orange-500 transition-colors">Speed-to-Lead</Link></li>
+              <li><Link to="/replies" className="hover:text-orange-500 transition-colors">Agentic Replies</Link></li>
               <li><Link to="/video" className="hover:text-orange-500 transition-colors">Video Marketing</Link></li>
               <li><Link to="/nodes" className="hover:text-orange-500 transition-colors">Hardware Nodes</Link></li>
             </ul>

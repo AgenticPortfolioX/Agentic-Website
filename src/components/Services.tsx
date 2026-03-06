@@ -91,14 +91,14 @@ export default function Services() {
                   <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-white/5 to-white/[0.02] flex items-center justify-center border border-white/10">
                     <Sparkles className="w-5 h-5 text-orange-500" />
                   </div>
-                  <h3 className="text-xl font-medium">Agentic Reviews</h3>
+                  <h3 className="text-xl font-medium">Agentic Replies</h3>
                 </div>
                 
                 <div className="flex items-center justify-between gap-4">
                   <p className="text-zinc-400 text-xs line-clamp-2">
                     Automated review management & reputation growth.
                   </p>
-                  <Link to="/contact" className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center border border-white/10 text-orange-500 hover:bg-orange-500 hover:text-black transition-all">
+                  <Link to="/replies" className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center border border-white/10 text-orange-500 hover:bg-orange-500 hover:text-black transition-all">
                     <ArrowUpRight className="w-4 h-4" />
                   </Link>
                 </div>
@@ -120,7 +120,7 @@ export default function Services() {
               </div>
               
               <div>
-                <h3 className="text-2xl font-medium mb-2">Hardware Nodes</h3>
+                <h3 className="text-3xl font-medium mb-2">Hardware Nodes</h3>
                 <p className="text-black/70 font-medium mb-4 text-sm">
                   Sovereign Bitcoin, Lightning, and NOSTR Nodes with Agentic Ai Management.
                 </p>
