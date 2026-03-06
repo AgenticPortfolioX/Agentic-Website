@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { Workflow, Video, Home, Cuboid, ArrowUpRight, Server, Zap } from 'lucide-react';
+import { Workflow, Video, Home, Cuboid, ArrowUpRight, Server, Zap, Sparkles } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function Services() {
@@ -46,32 +46,65 @@ export default function Services() {
             </div>
           </motion.div>
 
-          {/* Speed-to-Lead Agents - New Card */}
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.1 }}
-            className="md:col-span-1 bg-[#141414] rounded-[2rem] p-10 border border-white/5 relative overflow-hidden group"
-          >
-            <div className="absolute top-0 left-0 w-64 h-64 bg-orange-500/5 rounded-full blur-[60px] -translate-x-1/2 -translate-y-1/2 group-hover:bg-orange-500/10 transition-colors duration-500" />
-            
-            <div className="relative z-10 h-full flex flex-col justify-between">
-              <div className="w-14 h-14 rounded-2xl bg-white/5 flex items-center justify-center border border-white/10">
-                <Zap className="w-7 h-7 text-orange-500" />
-              </div>
+          <div className="md:col-span-1 flex flex-col gap-6 h-full">
+            {/* Speed-to-Lead - Half Card */}
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1 }}
+              className="flex-1 bg-[#141414] rounded-[2rem] p-6 border border-white/5 relative overflow-hidden group min-h-0"
+            >
+              <div className="absolute top-0 left-0 w-64 h-64 bg-orange-500/5 rounded-full blur-[60px] -translate-x-1/2 -translate-y-1/2 group-hover:bg-orange-500/10 transition-colors duration-500" />
               
-              <div>
-                <h3 className="text-2xl font-medium mb-2">Speed-to-Lead</h3>
-                <p className="text-zinc-400 text-sm mb-4">
-                  Instant, intelligent AI responses. Qualify leads and book meetings 24/7.
-                </p>
-                <Link to="/speed-to-lead" className="flex items-center gap-2 text-sm font-medium text-orange-500 hover:text-orange-400 transition-colors">
-                  Learn more <ArrowUpRight className="w-4 h-4" />
-                </Link>
+              <div className="relative z-10 h-full flex flex-col justify-between">
+                <div className="flex items-center gap-4">
+                  <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-white/5 to-white/[0.02] flex items-center justify-center border border-white/10">
+                    <Zap className="w-5 h-5 text-orange-500" />
+                  </div>
+                  <h3 className="text-xl font-medium">Speed-to-Lead</h3>
+                </div>
+                
+                <div className="flex items-center justify-between gap-4">
+                  <p className="text-zinc-400 text-xs line-clamp-2">
+                    Instant AI responses. Qualify leads 24/7.
+                  </p>
+                  <Link to="/speed-to-lead" className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center border border-white/10 text-orange-500 hover:bg-orange-500 hover:text-black transition-all">
+                    <ArrowUpRight className="w-4 h-4" />
+                  </Link>
+                </div>
               </div>
-            </div>
-          </motion.div>
+            </motion.div>
+
+            {/* Agentic Reviews - Half Card */}
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.15 }}
+              className="flex-1 bg-[#141414] rounded-[2rem] p-6 border border-white/5 relative overflow-hidden group min-h-0"
+            >
+              <div className="absolute bottom-0 right-0 w-64 h-64 bg-orange-500/5 rounded-full blur-[60px] translate-x-1/2 translate-y-1/2 group-hover:bg-orange-500/10 transition-colors duration-500" />
+              
+              <div className="relative z-10 h-full flex flex-col justify-between">
+                <div className="flex items-center gap-4">
+                  <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-white/5 to-white/[0.02] flex items-center justify-center border border-white/10">
+                    <Sparkles className="w-5 h-5 text-orange-500" />
+                  </div>
+                  <h3 className="text-xl font-medium">Agentic Reviews</h3>
+                </div>
+                
+                <div className="flex items-center justify-between gap-4">
+                  <p className="text-zinc-400 text-xs line-clamp-2">
+                    Automated review management & reputation growth.
+                  </p>
+                  <Link to="/contact" className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center border border-white/10 text-orange-500 hover:bg-orange-500 hover:text-black transition-all">
+                    <ArrowUpRight className="w-4 h-4" />
+                  </Link>
+                </div>
+              </div>
+            </motion.div>
+          </div>
 
           {/* Hardware Nodes - Orange Card */}
           <motion.div 
@@ -117,9 +150,6 @@ export default function Services() {
               </div>
               
               <div className="max-w-2xl">
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-500/20 text-orange-400 text-xs font-medium mb-4">
-                  Creative Studio
-                </div>
                 <h3 className="text-3xl font-medium mb-3">Video Marketing & 3D</h3>
                 <p className="text-zinc-300 text-lg mb-6">
                   Custom video ads, cinematic real estate drone flythroughs, and immersive 3D graphics generated from standard photos.
