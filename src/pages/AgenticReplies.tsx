@@ -5,7 +5,7 @@ import { useSEO } from '../hooks/useSEO';
 import { Link } from 'react-router-dom';
 
 export default function AgenticReplies() {
-  useSEO('Agentic Replies | AI-Powered Reputation Management', 'Transform your business reputation with 24/7 automated, intelligent review responses that drive SEO and revenue.');
+  useSEO('Agentic Replies | Automated Review Responses', 'Instantly reply to every customer review with intelligent, brand-consistent AI responses that drive local SEO and engagement.');
 
   const metrics = [
     {
@@ -57,8 +57,8 @@ export default function AgenticReplies() {
             transition={{ delay: 0.1 }}
             className="text-5xl md:text-7xl font-medium tracking-tight mb-8"
           >
-            Turn Your Reviews Into <br />
-            <span className="text-orange-500">Revenue Generation.</span>
+            The Automated <br />
+            <span className="text-orange-500">Review Respondent.</span>
           </motion.h1>
           
           <motion.p 
@@ -67,8 +67,8 @@ export default function AgenticReplies() {
             transition={{ delay: 0.2 }}
             className="text-zinc-400 text-xl max-w-3xl mx-auto mb-12"
           >
-            A $500 monthly investment to stop revenue leakage. Our AI agent manages your reputation 24/7, 
-            improves local SEO, and converts passive browsers into loyal customers.
+            A $500 monthly investment to ensure no customer is ignored. Our AI agent instantly 
+            replies to every positive and negative review on your business profile, 24/7.
           </motion.p>
 
           <motion.div
@@ -77,7 +77,7 @@ export default function AgenticReplies() {
             transition={{ delay: 0.3 }}
           >
             <Link to="/contact" className="bg-white text-black px-8 py-4 rounded-full text-lg font-medium hover:bg-zinc-200 transition-colors inline-flex items-center gap-2">
-              Get Started <ArrowRight className="w-5 h-5" />
+              Add Your Profile <ArrowRight className="w-5 h-5" />
             </Link>
           </motion.div>
         </div>
@@ -88,7 +88,7 @@ export default function AgenticReplies() {
         <div className="max-w-7xl mx-auto">
           <div className="mb-16">
             <h2 className="text-3xl font-medium mb-4">Economic Impact (ROI)</h2>
-            <p className="text-zinc-400">Scale your extraordinary results with automated intelligence.</p>
+            <p className="text-zinc-400">Scale your engagement results with automated intelligence.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -119,27 +119,27 @@ export default function AgenticReplies() {
       <section className="py-24 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="mb-16 text-center">
-            <h2 className="text-4xl font-medium mb-4">Reputation Performance</h2>
-            <p className="text-zinc-400">How the Agent transforms your business profile.</p>
+            <h2 className="text-4xl md:text-5xl font-medium mb-4">Reputation Performance</h2>
+            <p className="text-zinc-400 text-lg">How the Agent transforms your engagement profile.</p>
           </div>
 
-          <div className="overflow-x-auto">
+          <div className="overflow-x-auto rounded-[2rem] border border-white/5 bg-white/[0.02]">
             <table className="w-full text-left border-collapse">
               <thead>
-                <tr className="border-b border-white/10 text-zinc-500 text-sm">
-                  <th className="py-6 px-4 font-medium uppercase tracking-wider">Metric</th>
-                  <th className="py-6 px-4 font-medium uppercase tracking-wider">Industry Standard</th>
-                  <th className="py-6 px-4 font-medium uppercase tracking-wider text-orange-500">Agent's Impact</th>
-                  <th className="py-6 px-4 font-medium uppercase tracking-wider">Detail</th>
+                <tr className="border-b border-white/10 bg-white/5">
+                  <th className="py-8 px-8 font-semibold text-xl text-white uppercase tracking-wider">Metric</th>
+                  <th className="py-8 px-8 font-semibold text-xl text-white uppercase tracking-wider">Industry Standard</th>
+                  <th className="py-8 px-8 font-semibold text-xl text-orange-500 uppercase tracking-wider">Agent's Impact</th>
+                  <th className="py-8 px-8 font-semibold text-xl text-white uppercase tracking-wider">Detail</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-white/5">
                 {tableData.map((row, index) => (
                   <tr key={index} className="group hover:bg-white/[0.02] transition-colors">
-                    <td className="py-6 px-4 font-medium text-lg">{row.label}</td>
-                    <td className="py-6 px-4 text-zinc-400 italic">{row.industry}</td>
-                    <td className="py-6 px-4 font-bold text-orange-500 text-xl">{row.impact}</td>
-                    <td className="py-6 px-4 text-zinc-400 text-sm">{row.detail}</td>
+                    <td className="py-8 px-8 font-medium text-2xl text-zinc-200">{row.label}</td>
+                    <td className="py-8 px-8 text-zinc-400 italic text-xl">{row.industry}</td>
+                    <td className="py-8 px-8 font-bold text-orange-500/90 text-3xl">{row.impact}</td>
+                    <td className="py-8 px-8 text-zinc-400 text-lg">{row.detail}</td>
                   </tr>
                 ))}
               </tbody>
@@ -156,21 +156,21 @@ export default function AgenticReplies() {
               <BarChart3 className="w-10 h-10 text-orange-500 mb-6" />
               <h3 className="text-xl font-medium mb-4">The Weekly Digest</h3>
               <p className="text-zinc-400 text-sm leading-relaxed">
-                The agent summarizes themes automatically, flagging operational issues before they become permanent 1-star reviews.
+                The agent summarizes themes automatically, flagging operational issues mentioned in reviews before they damage your reputation.
               </p>
             </div>
             <div className="p-8 rounded-3xl bg-zinc-900/50 border border-white/5">
               <MessageSquare className="w-10 h-10 text-orange-500 mb-6" />
               <h3 className="text-xl font-medium mb-4">Brand Consistency</h3>
               <p className="text-zinc-400 text-sm leading-relaxed">
-                "Tone-Matched Replies" that reference specifics, ensuring your business looks high-touch and professional 24/7.
+                "Tone-Matched Replies" that reference specifics, ensuring every reviewer feels heard and valued by your brand.
               </p>
             </div>
             <div className="p-8 rounded-3xl bg-zinc-900/50 border border-white/5">
               <Search className="w-10 h-10 text-orange-500 mb-6" />
               <h3 className="text-xl font-medium mb-4">SEO Boost</h3>
               <p className="text-zinc-400 text-sm leading-relaxed">
-                Keyword-rich responses help you rank higher. Google rewards active profiles that engage frequently with customers.
+                Keyword-rich responses help you rank higher. Google rewards active profiles that engage with every guest review.
               </p>
             </div>
           </div>
@@ -182,9 +182,9 @@ export default function AgenticReplies() {
         <div className="max-w-4xl mx-auto bg-gradient-to-br from-orange-500 to-orange-600 rounded-[3rem] p-16 text-center text-black relative overflow-hidden">
           <div className="relative z-10">
             <ShieldCheck className="w-16 h-16 mx-auto mb-8 opacity-90" />
-            <h2 className="text-4xl font-bold mb-6">Stop Revenue Leakage Today</h2>
+            <h2 className="text-4xl font-bold mb-6">Stop Leaving Reviews Unanswered</h2>
             <p className="text-black/80 text-xl mb-10 max-w-2xl mx-auto">
-              Ready to automate your reputation? Deploy your Agentic Reply agent in under 48 hours.
+              Ready to automate your guest engagement? Deploy your Agentic Reply agent in under 48 hours.
             </p>
             <Link to="/contact" className="bg-black text-white px-10 py-4 rounded-full text-lg font-medium hover:bg-zinc-900 transition-colors inline-flex items-center gap-2">
               Start Your Free Audit <ArrowRight className="w-5 h-5" />
