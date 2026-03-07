@@ -52,7 +52,7 @@ export default function AgenticReplies() {
             <div className="space-y-6">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 rounded-xl bg-orange-500/10 flex items-center justify-center shrink-0">
-                  <span className="text-orange-500 font-bold text-xl">5-9%</span>
+                  <span className="text-orange-500 font-bold text-xl whitespace-nowrap">5-9%</span>
                 </div>
                 <div>
                   <p className="text-white font-medium">Revenue Growth</p>
