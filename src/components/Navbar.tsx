@@ -15,7 +15,7 @@ export default function Navbar() {
         <div className="hidden md:flex items-center gap-8 text-sm font-medium text-zinc-400">
           <Link to="/workflows" className="hover:text-white transition-colors">Automated Workflows</Link>
           <Link to="/speed-to-lead" className="hover:text-white transition-colors">Speed-to-Lead</Link>
-          <Link to="/replies" className="hover:text-white transition-colors">Review Agent</Link>
+          <Link to="/replies" className="hover:text-white transition-colors">Respond Agent</Link>
           <Link to="/video" className="hover:text-white transition-colors">Video Marketing</Link>
           <Link to="/nodes" className="hover:text-white transition-colors">Hardware Nodes</Link>
           <Link to="/blog" className="hover:text-white transition-colors">Updates</Link>

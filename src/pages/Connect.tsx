@@ -256,15 +256,31 @@ END:VCARD`;
 
               <div className="space-y-1">
                 {contactMethod === 'text' && (
-                  <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }}>
-                    <input
-                      type="tel"
-                      value={formData.text}
-                      onChange={(e) => setFormData({ ...formData, text: e.target.value })}
-                      placeholder="Phone number (e.g., +1234567890)"
-                      className="w-full bg-[#0a0a0a] border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-orange-500 transition-colors"
-                    />
-                    <p className="text-xs text-zinc-500 px-1 mt-2">We'll text you.</p>
+                  <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} className="space-y-4">
+                    <div>
+                      <input
+                        type="tel"
+                        value={formData.text}
+                        onChange={(e) => setFormData({ ...formData, text: e.target.value })}
+                        placeholder="Phone number (e.g., +1234567890)"
+                        className="w-full bg-[#0a0a0a] border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-orange-500 transition-colors"
+                      />
+                      <p className="text-xs text-zinc-500 px-1 mt-2">We'll text you.</p>
+                    </div>
+
+                    <div className="flex items-start gap-3 bg-[#0a0a0a]/50 border border-white/5 p-3 rounded-xl">
+                      <div className="flex items-center h-4 mt-0.5">
+                        <input id="connect-sms-consent" type="checkbox" required className="w-4 h-4 rounded border-white/10 bg-[#0a0a0a] text-orange-500" />
+                      </div>
+                      <div className="text-xs">
+                        <label htmlFor="connect-sms-consent" className="font-medium text-zinc-300">
+                          I agree to receive SMS text messages.
+                        </label>
+                        <p className="text-zinc-500 mt-1 leading-relaxed">
+                          By checking this box, I agree to receive SMS text messages from Agentic Services. Reply STOP to opt-out. Msg & data rates may apply. See our <a href="/opt-in" className="text-orange-500 hover:text-orange-400">Proof of Consent</a>.
+                        </p>
+                      </div>
+                    </div>
                   </motion.div>
                 )}
                 {contactMethod === 'telegram' && (

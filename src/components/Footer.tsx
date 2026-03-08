@@ -23,7 +23,7 @@ export default function Footer() {
             <ul className="space-y-3 text-zinc-400 text-sm">
               <li><Link to="/workflows" className="hover:text-orange-500 transition-colors">Automated Workflows</Link></li>
               <li><Link to="/speed-to-lead" className="hover:text-orange-500 transition-colors">Speed-to-Lead</Link></li>
-              <li><Link to="/replies" className="hover:text-orange-500 transition-colors">Agentic Replies</Link></li>
+              <li><Link to="/replies" className="hover:text-orange-500 transition-colors">Respond Agent</Link></li>
               <li><Link to="/video" className="hover:text-orange-500 transition-colors">Video Marketing</Link></li>
               <li><Link to="/nodes" className="hover:text-orange-500 transition-colors">Hardware Nodes</Link></li>
             </ul>
@@ -45,7 +45,8 @@ export default function Footer() {
             <p>© {new Date().getFullYear()} Agentic Services. All rights reserved.</p>
             <p>Serving Oakland County Michigan, Wayne County & Metro Detroit.</p>
           </div>
-          <div className="flex gap-6 mt-4 md:mt-0">
+          <div className="flex gap-4 sm:gap-6 mt-4 md:mt-0 flex-wrap justify-center sm:justify-end">
+            <Link to="/opt-in" className="hover:text-white transition-colors">SMS Proof of Consent</Link>
             <Link to="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
             <Link to="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
           </div>
