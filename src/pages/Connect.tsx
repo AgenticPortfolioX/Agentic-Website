@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { UserPlus, Mail, Phone, Linkedin, Github, Calendar, Twitter, Instagram, Send, Code2, MessageCircle } from 'lucide-react';
 import { useSEO } from '../hooks/useSEO';
+import SupportProject from '../components/SupportProject';
 
 export default function Connect() {
   useSEO('Connect with Justin Gramke', 'Digital Contact Hub for Justin Gramke, Compliance Architect.');
@@ -61,6 +62,7 @@ END:VCARD`;
   };
 
   return (
+    <>
     <div className="pt-24 pb-24 px-6 min-h-screen bg-[#050505] flex justify-center">
       {/* Mobile-optimized container */}
       <div className="w-full max-w-md">
@@ -352,5 +354,7 @@ END:VCARD`;
 
       </div>
     </div>
+    <SupportProject />
+    </>
   );
 }

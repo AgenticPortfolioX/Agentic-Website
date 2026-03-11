@@ -2,7 +2,6 @@ import React from 'react';
 import Hero from '../components/Hero';
 import Services from '../components/Services';
 import Testimonials from '../components/Testimonials';
-import SupportProject from '../components/SupportProject';
 import { useSEO } from '../hooks/useSEO';
 
 export default function Home() {
@@ -13,7 +12,6 @@ export default function Home() {
       <Hero />
       <Services />
       <Testimonials />
-      <SupportProject />
     </>
   );
 }

@@ -26,19 +26,14 @@ export default function SupportProject() {
           viewport={{ once: true }}
           className="max-w-2xl mx-auto"
         >
-          <h2 className="text-3xl font-semibold mb-6">Support the Project</h2>
-          <p className="text-zinc-400 mb-8">
-            Help us continue building by supporting with Lightning Address or Agent Zap.
-          </p>
-
           <div className="flex flex-col gap-4 max-w-md mx-auto">
             <div className="bg-white/5 border border-white/10 rounded-xl p-4 flex items-center justify-between">
               <div className="text-left">
                 <div className="text-sm text-zinc-400 mb-1">Lightning Address:</div>
-                <div className="font-mono text-orange-400">me@agenticportfoliox.github.io</div>
+                <div className="font-mono text-orange-400">Grams121@agenticportfoliox.github.io</div>
               </div>
               <button
-                onClick={() => handleCopy('me@agenticportfoliox.github.io', 'me')}
+                onClick={() => handleCopy('Grams121@agenticportfoliox.github.io', 'me')}
                 className="p-2 hover:bg-white/10 rounded-lg transition-colors text-zinc-300"
                 title="Copy to Clipboard"
               >
@@ -49,10 +44,10 @@ export default function SupportProject() {
             <div className="bg-white/5 border border-white/10 rounded-xl p-4 flex items-center justify-between">
               <div className="text-left">
                 <div className="text-sm text-zinc-400 mb-1">Agent Zap:</div>
-                <div className="font-mono text-orange-400">hermes@agenticportfoliox.github.io</div>
+                <div className="font-mono text-orange-400">SatoshiNodeAgent@agenticportfoliox.github.io</div>
               </div>
               <button
-                onClick={() => handleCopy('hermes@agenticportfoliox.github.io', 'hermes')}
+                onClick={() => handleCopy('SatoshiNodeAgent@agenticportfoliox.github.io', 'hermes')}
                 className="p-2 hover:bg-white/10 rounded-lg transition-colors text-zinc-300"
                 title="Copy to Clipboard"
               >
