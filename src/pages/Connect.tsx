@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { UserPlus, Mail, Phone, Linkedin, Github, Calendar, Twitter, Instagram, Send, Code2, MessageCircle } from 'lucide-react';
 import { useSEO } from '../hooks/useSEO';
-import SupportProject from '../components/SupportProject';
+import CompactSupport from '../components/CompactSupport';
 
 export default function Connect() {
   useSEO('Connect with Justin Gramke', 'Digital Contact Hub for Justin Gramke, Compliance Architect.');
@@ -352,9 +352,16 @@ END:VCARD`;
           </a>
         </motion.div>
 
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.6 }}
+        >
+          <CompactSupport />
+        </motion.div>
+
       </div>
     </div>
-    <SupportProject />
     </>
   );
 }
