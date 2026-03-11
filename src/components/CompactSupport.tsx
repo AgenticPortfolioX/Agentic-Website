@@ -19,9 +19,9 @@ export default function CompactSupport() {
   return (
     <div className="flex flex-col gap-2 w-full max-w-sm mx-auto mt-4 px-2">
       <div className="bg-white/[0.03] border border-white/5 rounded-xl p-3 flex items-center justify-between group hover:bg-white/[0.05] transition-colors">
-        <div className="text-left">
-          <div className="text-[10px] uppercase tracking-wider text-zinc-500 mb-0.5">Lightning Address</div>
-          <div className="font-mono text-xs text-orange-400/90 truncate max-w-[200px]">Grams121@agenticportfoliox.github.io</div>
+        <div className="text-left flex-1 min-w-0">
+          <div className="text-[10px] uppercase tracking-wider text-zinc-500 mb-0.5 whitespace-nowrap">Lightning Address:</div>
+          <div className="font-mono text-xs text-orange-400/90 break-all">Grams121@agenticportfoliox.github.io</div>
         </div>
         <button
           onClick={() => handleCopy('Grams121@agenticportfoliox.github.io', 'grams')}
@@ -33,9 +33,9 @@ export default function CompactSupport() {
       </div>
 
       <div className="bg-white/[0.03] border border-white/5 rounded-xl p-3 flex items-center justify-between group hover:bg-white/[0.05] transition-colors">
-        <div className="text-left">
-          <div className="text-[10px] uppercase tracking-wider text-zinc-500 mb-0.5">Agent Zap</div>
-          <div className="font-mono text-xs text-orange-400/90 truncate max-w-[200px]">SatoshiNodeAgent@agenticportfoliox.github.io</div>
+        <div className="text-left flex-1 min-w-0">
+          <div className="text-[10px] uppercase tracking-wider text-zinc-500 mb-0.5 whitespace-nowrap">Pay my Agent:</div>
+          <div className="font-mono text-xs text-orange-400/90 break-all">SatoshiNodeAgent@agenticportfoliox.github.io</div>
         </div>
         <button
           onClick={() => handleCopy('SatoshiNodeAgent@agenticportfoliox.github.io', 'satoshi')}
