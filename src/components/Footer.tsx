@@ -11,11 +11,15 @@ export default function Footer() {
               <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-orange-400 to-orange-600 flex items-center justify-center">
                 <Sparkles className="w-5 h-5 text-black" />
               </div>
-              <span className="font-semibold text-xl tracking-tight">Agentic<span className="text-orange-500">.</span></span>
+              <span className="font-semibold text-xl tracking-tight">Renowed Value Restoration LLC<span className="text-orange-500">.</span></span>
             </Link>
-            <p className="text-zinc-400 max-w-sm">
+            <p className="text-zinc-400 max-w-sm mb-4">
               Building the future of automated workflows, high-converting video marketing assets, and sovereign hardware nodes.
             </p>
+            <div className="text-zinc-500 text-sm space-y-1">
+              <p>2711 williamsburg Cir</p>
+              <p>Auburn hills, Michigan 48326</p>
+            </div>
           </div>
           
           <div>
@@ -42,7 +46,7 @@ export default function Footer() {
         
         <div className="flex flex-col md:flex-row items-center justify-between pt-8 border-t border-white/5 text-sm text-zinc-500">
           <div className="flex flex-col gap-2 text-center md:text-left">
-            <p>© {new Date().getFullYear()} Agentic Services. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} Renowed Value Restoration LLC. All rights reserved.</p>
             <p>Serving Oakland County Michigan, Wayne County & Metro Detroit.</p>
           </div>
           <div className="flex gap-4 sm:gap-6 mt-4 md:mt-0 flex-wrap justify-center sm:justify-end">

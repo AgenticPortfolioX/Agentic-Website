@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'motion/react';
-import { UserPlus, Mail, Phone, Linkedin, Github, Calendar, Twitter, Instagram, Send, Code2, MessageCircle } from 'lucide-react';
+import { UserPlus, Mail, Phone, Linkedin, Github, Calendar, Twitter, Instagram, Send, Code2, MessageCircle, Star } from 'lucide-react';
 import { useSEO } from '../hooks/useSEO';
 import CompactSupport from '../components/CompactSupport';
 
@@ -21,7 +21,7 @@ NICKNAME:Grams
 TITLE:Compliance Architect
 TEL;TYPE=CELL:810-240-0069
 EMAIL:jmgramke@gmail.com
-URL:https://agenticservices.com
+URL:https://agenticportfoliox.github.io/AgenticRVR
 END:VCARD`;
 
     const blob = new Blob([vcfData], { type: 'text/vcard' });
@@ -95,18 +95,14 @@ END:VCARD`;
             {/* Online Persona (Grams) Column */}
             <div className="flex-1 flex flex-col items-center text-center translate-x-4 translate-y-8">
               <div className="relative inline-block mb-4">
-                <div className="w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden border-2 border-orange-500/30 p-1">
-                  <div className="w-full h-full rounded-full bg-zinc-800 overflow-hidden">
-                    <img
-                      src="/AgenticRVR/penguin.jpg"
-                      alt="Grams"
-                      className="w-full h-full object-cover opacity-80"
-                    />
+                <div className="w-20 h-20 md:w-24 md:h-24 rounded-full border-2 border-orange-500/30 p-1">
+                  <div className="w-full h-full rounded-full bg-zinc-800 flex items-center justify-center">
+                    <Star className="w-10 h-10 text-orange-400 opacity-60" />
                   </div>
                 </div>
               </div>
               <h2 className="text-lg md:text-xl font-medium tracking-tight mb-1">Grams</h2>
-              <p className="text-orange-500 text-[10px] md:text-xs font-medium uppercase tracking-wider h-6 flex items-center justify-center">Pudgy Penguin #4860</p>
+              <p className="text-orange-500 text-[10px] md:text-xs font-medium uppercase tracking-wider h-6 flex items-center justify-center">Verified Contributor</p>
             </div>
           </div>
 
@@ -279,7 +275,7 @@ END:VCARD`;
                           I agree to receive SMS text messages.
                         </label>
                         <p className="text-zinc-500 mt-1 leading-relaxed">
-                          By checking this box, I agree to receive SMS text messages from Agentic Services. Reply STOP to opt-out. Msg & data rates may apply. See our <a href="/opt-in" className="text-orange-500 hover:text-orange-400">Proof of Consent</a>.
+                          By checking this box, I agree to receive SMS text messages from Renowed Value Restoration LLC. Reply STOP to opt-out. Msg & data rates may apply. See our <a href="/opt-in" className="text-orange-500 hover:text-orange-400">Proof of Consent</a>.
                         </p>
                       </div>
                     </div>
