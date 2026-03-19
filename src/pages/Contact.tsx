@@ -4,7 +4,7 @@ import { Mail, Phone, MapPin, ArrowRight, Loader2, CheckCircle2, AlertCircle } f
 import { useSEO } from '../hooks/useSEO';
 
 export default function Contact() {
-  useSEO('Contact Us', 'Get in touch with Agentic Services for AI workflows, video marketing, and sovereign hardware nodes.');
+  useSEO('Contact Us', 'Get in touch with Renowed Value Restoration LLC for AI workflows, video marketing, and sovereign hardware nodes.');
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
@@ -126,7 +126,7 @@ export default function Contact() {
                     I agree to receive SMS text messages.
                   </label>
                   <p className="text-zinc-500 text-xs mt-1 leading-relaxed">
-                    By checking this box, I agree to receive SMS text messages from Agentic Services regarding my inquiry, appointments, and services. Reply STOP to opt-out at any time. Message and data rates may apply. Read our <a href="/privacy" className="text-orange-500 hover:text-orange-400 transition-colors">Privacy Policy</a> or <a href="/opt-in" className="text-orange-500 hover:text-orange-400 transition-colors">Proof of Consent</a>.
+                    By checking this box, I agree to receive SMS text messages from Renowed Value Restoration LLC regarding my inquiry, appointments, and services. Reply STOP to opt-out at any time. Message and data rates may apply. Read our <a href="/privacy" className="text-orange-500 hover:text-orange-400 transition-colors">Privacy Policy</a> or <a href="/opt-in" className="text-orange-500 hover:text-orange-400 transition-colors">Proof of Consent</a>.
                   </p>
                 </div>
               </div>
@@ -178,7 +178,7 @@ export default function Contact() {
               Mandatory Disclaimer
             </p>
             <p className="text-sm text-zinc-400 leading-relaxed">
-              By texting START to +18444916828, you consent to receive recurring automated text messages from Agentic Services regarding service updates and scheduling. Consent is not a condition of purchase. Message and data rates may apply. Message frequency varies. Reply STOP to cancel, HELP for help.
+              By texting START to +18444916828, you consent to receive recurring automated text messages from Renowed Value Restoration LLC regarding service updates and scheduling. Consent is not a condition of purchase. Message and data rates may apply. Message frequency varies. Reply STOP to cancel, HELP for help.
             </p>
             <div className="flex items-center justify-center gap-6 text-xs transition-colors">
               <a href="/privacy" className="text-zinc-500 hover:text-orange-500 underline underline-offset-4 decoration-zinc-800 hover:decoration-orange-500/30">Privacy Policy</a>

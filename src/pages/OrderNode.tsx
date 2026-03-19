@@ -5,7 +5,7 @@ import { Server, ArrowRight, Loader2, CheckCircle2, AlertCircle } from 'lucide-r
 import { useSEO } from '../hooks/useSEO';
 
 export default function OrderNode() {
-  useSEO('Order Node | Agentic Services', 'Order your Agentic Bitcoin Node.');
+  useSEO('Order Node | Renowed Value Restoration LLC', 'Order your Restoration Bitcoin Node.');
   const [searchParams] = useSearchParams();
   const initialModel = searchParams.get('model') === 'pro' ? 'pro' : 'base';
 
@@ -54,7 +54,7 @@ export default function OrderNode() {
             transition={{ delay: 0.1 }}
             className="text-4xl md:text-6xl font-medium tracking-tight mb-6"
           >
-            Order Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600">Agentic Bitcoin Node</span>
+            Order Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600">Restoration Bitcoin Node</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}

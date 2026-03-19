@@ -6,7 +6,7 @@ import { useSEO } from '../hooks/useSEO';
 const posts = [
   {
     id: 1,
-    category: 'Agentic Workflows',
+    category: 'Restoration Workflows',
     icon: Workflow,
     date: 'February 28, 2026',
     title: 'The Rise of Autonomous Business Systems',
@@ -33,7 +33,7 @@ const posts = [
   },
   {
     id: 4,
-    category: 'Agentic Workflows',
+    category: 'Restoration Workflows',
     icon: Workflow,
     date: 'January 10, 2026',
     title: 'Case Study: 40 Hours Saved per Week',
@@ -45,8 +45,8 @@ const posts = [
     category: 'Hardware Nodes',
     icon: Server,
     date: 'January 5, 2026',
-    title: 'Nostr Relays on the Agentic Node',
-    excerpt: 'Take back your social graph. How to utilize the built-in Nostr relay on your new Agentic Node for uncensorable communication.',
+    title: 'Nostr Relays on the Restoration Node',
+    excerpt: 'Take back your social graph. How to utilize the built-in Nostr relay on your new Restoration Node for uncensorable communication.',
     image: 'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?q=80&w=800&auto=format&fit=crop'
   },
   {
@@ -61,7 +61,7 @@ const posts = [
 ];
 
 export default function Blog() {
-  useSEO('Updates & Social', 'Latest news, case studies, and updates from Agentic Services.');
+  useSEO('Updates & Social', 'Latest news, case studies, and updates from Renowed Value Restoration LLC.');
   const [filter, setFilter] = useState('All');
 
   const filteredPosts = filter === 'All' ? posts : posts.filter(p => p.category === filter);
@@ -94,7 +94,7 @@ export default function Blog() {
           transition={{ delay: 0.2 }}
           className="flex flex-wrap justify-center gap-4 mb-16"
         >
-          {['All', 'Agentic Workflows', 'Video Marketing', 'Hardware Nodes'].map((cat) => (
+          {['All', 'Restoration Workflows', 'Video Marketing', 'Hardware Nodes'].map((cat) => (
             <button
               key={cat}
               onClick={() => setFilter(cat)}
